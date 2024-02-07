@@ -37,4 +37,15 @@ public class DeveloperController {
         return developers.get(developer.getId());
     }
 
+    @PutMapping("/{id}")
+    public Developer addDeveloper(@PathVariable Integer id, @RequestBody Developer developer) {
+        developers.put(id, developer);
+        return developers.get(id);
+    }
+
+    @DeleteMapping
+    public Developer removeDeveloper(@RequestBody Developer developer) {
+        return developers.remove(developer.getId());
+    }
+
 }
