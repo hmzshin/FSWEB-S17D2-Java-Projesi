@@ -1,6 +1,6 @@
-package com.workintech.s17d2.model;
+package com.workintech.s17d2.DependecyInjection.model;
 
-import com.workintech.s17d2.rest.Experience;
+import com.workintech.s17d2.DependecyInjection.rest.Experience;
 
 public class Developer {
     private int id;

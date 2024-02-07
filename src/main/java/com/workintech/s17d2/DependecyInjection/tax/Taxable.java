@@ -1,4 +1,4 @@
-package com.workintech.s17d2.tax;
+package com.workintech.s17d2.DependecyInjection.tax;
 
 public interface Taxable {
     double getSimpleTaxRate();
@@ -6,6 +6,5 @@ public interface Taxable {
     double getMiddleTaxRate();
 
     double getUpperTaxRate();
-
 
 }

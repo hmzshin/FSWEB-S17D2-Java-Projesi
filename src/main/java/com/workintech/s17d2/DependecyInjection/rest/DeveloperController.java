@@ -1,7 +1,8 @@
-package com.workintech.s17d2.rest;
+package com.workintech.s17d2.DependecyInjection.rest;
 
-import com.workintech.s17d2.model.Developer;
-import com.workintech.s17d2.tax.DeveloperTax;
+import com.workintech.s17d2.DependecyInjection.model.Developer;
+import com.workintech.s17d2.DependecyInjection.tax.DeveloperTax;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,8 +21,7 @@ public class DeveloperController {
         this.developers = new HashMap<>();
     }
 
-
-    @GetMapping("/developers")
+    @GetMapping
     public List<Developer> getDevelopers() {
         return developers.values().stream().toList();
     }
@@ -36,6 +36,5 @@ public class DeveloperController {
         developers.put(developer.getId(), developer);
         return developers.get(developer.getId());
     }
-
 
 }
