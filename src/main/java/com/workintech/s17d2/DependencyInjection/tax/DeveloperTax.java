@@ -1,12 +1,12 @@
-package com.workintech.s17d2.DependecyInjection.tax;
+package com.workintech.s17d2.DependencyInjection.tax;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class DeveloperTax implements Taxable {
+
     @Override
     public double getSimpleTaxRate() {
-
         return 0.25;
     }
 
